@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url(imgs/back-ground.jpg);
+    /* background-size: 100vh; */
+    height: 60vw;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow: inset 0px 0px 0px white; */
+}
+
+/* nav start */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav span img {
+    width: 10vw;
+    background: transparent;
+}
+
+nav span {
+    margin-top: 20px;
+    z-index: 10;
+}
+
+.button {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.button svg {
+    width: 1vw;
+    height: 1vw;
+}
+
+.english{
+    width: 9vw;
+    height: 3vw;
+    font-size: 1vw;
+    border: 1px solid white;
+    opacity: 100%;
+    border-radius: 4px;
+    z-index: 10;
+    color: white;
+    background-color: inherit;
+}
+
+.button> :nth-child(2) {
+    width: 9vw;
+    height: 3vw;
+    font-size: 1vw;
+    border: none;
+    background-color: rgb(229, 9, 20);
+    border-radius: 4px;
+    z-index: 10;
+    color: white;
+}
+
+/* nav end */
+.main .box {
+    height: 60vw;
+    width: 100%;
+    /* opacity: 0.5; */
+    /* background-color: black; */
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.872));
+}
+
+.text {
+    /* position: absolute; */
+    color: white;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text> :nth-child(1) {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 4vw;
+    padding-top: 10vw;
+}
+
+.text> :nth-child(2) {
+    text-align: center;
+    font-size: 1.5vw;
+    padding-bottom: 10px;
+}
+
+.hov:hover {
+    cursor: pointer;
+    background-color: rgb(128, 9, 9);
+}
+
+.text> :nth-child(3) {
+    text-align: center;
+    font-size: 1.5vw;
+    padding-bottom: 10px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 100px;
+}
+
+.email input {
+    opacity: 50%;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+    height: 50px;
+    width: 350px;
+}
+
+.email input::placeholder {
+    color: white;
+    z-index: 10;
+    font-size: 100%;
+}
+
+.email button {
+    background-color: rgb(229, 9, 20);
+    z-index: 10;
+    border-radius: 8px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: none;
+    font-weight: 540;
+    font-size: large;
+}
+
+/*  cureve  */
+.curve {
+    width: 100%;
+    height: 80px;
+    border-top: 5px solid rgb(137, 18, 18);
+    border-top-left-radius: 50%;
+    position: relative;
+    margin-top: -50px;
+    border-top-right-radius: 50%;
+    background-image: linear-gradient(rgba(3, 3, 130, 0.95) 2%, black 40%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.font{
+    color: white;
+    font-size: 2rem;    
+    background-color: black;
+    margin-left: 8vw;
+}
+.trend{
+    background-color: black;
+}
+/*top ten tranding */
+.smain {
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.scroll {
+    display: flex;
+    position: relative;
+    background-color: black;
+    overflow-x: auto;
+    gap: 5vw;
+    padding: 10vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.scroll img:hover {
+    transition: 0.3s;
+    scale: 1.1;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0;
+}
+
+.item img {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* plans */
+.plans {
+    display: flex;
+    gap: 2vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 2vw;
+    padding-bottom: 4vw;
+}
+
+.plans-heading {
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin-left: 8vw;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.plan {
+    width: 21vw;
+    height: 19vw;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1.8vw;
+    gap: 0.5vw;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.078);
+}
+
+.plan:hover {
+    transition: 0.3s;
+    scale: 1.03;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+/* Plan card backgrounds */
+.plans> :nth-child(1) {
+    background: linear-gradient(to bottom right, #143166, #031023);
+}
+
+.plans> :nth-child(2) {
+    background: linear-gradient(to bottom right, #143166, #031023);
+}
+
+.plans> :nth-child(2)::before {
+    content: "Most Popular";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    border-bottom-left-radius: 8px;
+}
+
+.plans> :nth-child(3) {
+    background: linear-gradient(to bottom right, #331158, #0d021b);
+}
+
+.plans> :nth-child(4) {
+    background: linear-gradient(to bottom right, #5a1028, #140208);
+}
+
+.plan font {
+    font-size:clamp(1.5rem,1vw,1.8rem);
+    font-weight: bold;
+    margin-bottom: 0.5vw;
+}
+
+.plan p {
+    font-size: clamp(1rem,1vw,1.3rem);
+    margin-bottom: 0.2vw;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.plan p:nth-child(2) {
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem !important;
+    margin-top: auto;
+}
+
+/* Reson */
+.resonsheading {
+    color: white;
+    font-family: 'Segoe UI';
+    margin-left: 8vw;
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: 750;
+}
+
+.resons {
+    display: flex;
+    gap: 2vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 2vw;
+    padding-bottom: 4vw;
+}
+
+.res {
+    position: relative;
+    width: 21vw;
+    height: 15vw;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1.8vw;
+    gap: 0.5vw;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.315);
+    border: 1px solid rgba(255, 255, 255, 0.078);
+}
+
+.res font {
+    font-size: clamp(1rem,1.5vw,1.7rem);
+    padding: 0.2vw;
+}
+
+.res p {
+    font-size: clamp(1rem,1.3vw,1.2rem);
+    padding: 0.2vw;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+.res img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1.5vw;
+    scale: 1.5;
+}
+
+/* Questions */
+.questionheading {
+    color: white;
+    font-family: 'Segoe UI';
+    margin-left: 8vw;
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: 750;
+}
+
+.questions {
+    display: flex;
+    gap: 0.5vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 2vw;
+    padding-bottom: 4vw;
+    flex-direction: column;
+}
+
+.question {
+    position: relative;
+    width: auto;
+    height: 4.5vw;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 1.8vw;
+    transition: 0.3s;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.315);
+    border: 1px solid rgba(255, 255, 255, 0.078);
+    align-items: center;
+    font-size: 1.2rem;
+}
+.question::after{
+    content: "+";
+    position: absolute;
+    right: 0;
+    padding: 4vw;
+    scale: 2;
+}
+.question:hover{
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.395);
+    cursor: pointer;
+}
+/* footer content */
+.footheading{
+    color: rgba(224, 223, 223, 0.774);
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 2vw;
+}
+.footheading font{ 
+    color: rgba(224, 223, 223, 0.774);
+    text-decoration: underline;
+    font-family: Arial;
+}
+.content p{
+    color: rgba(224, 223, 223, 0.774);
+    text-decoration: underline;
+    font-family: Arial;
+    padding: 1vw;
+}
+.content p,.footheading font:hover{
+    cursor: pointer;
+}
+footer .lastenglish{
+    width: 9vw;
+    height: 3vw;
+    font-size: 1vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 2vw;
+}
+.end {
+    color: rgba(224, 223, 223, 0.774);
+    font-family: Arial;
+    margin: 4vw 8vw 5vw 8vw;
+}
+
+@media (max-width:769px) {
+    footer .lastenglish{
+        width: 20vw;
+        height: 7vw;
+        font-size: 1rem;
+    }
+    .text> :nth-child(1) {
+        font-size: 5vw;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 3vw;
+    }
+
+    .text> :nth-child(3) {
+        font-size: 3vw;
+    }
+
+    .main {
+        height: 110vw;
+    }
+
+    .main .box {
+        height: 110vw;
+    }
+
+    .button svg {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    nav span {
+        margin-top: 4px;
+    }
+
+    .logo {
+        width: 20vw;
+    }
+
+    .button> :nth-child(1) {
+        width: 16vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+
+    .button> :nth-child(2) {
+        width: 16vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+
+    .email {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .email input {
+        height: 30px;
+        width: 200px;
+    }
+
+    .email button {
+        height: 30px;
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .curve {
+        margin-top: -20px;
+        height: 40px;
+    }
+
+    .font {
+        font-size: 1.8rem;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 80vw;
+        height: auto;
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    .plans> :nth-child(2)::before {
+        font-size: 0.7rem;
+        padding: 3px 10px;
+    }
+
+    .resons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .res {
+        width: 80vw;
+        height: auto;
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    .res img {
+        padding: 4vw;
+    }
+
+    .question {
+        height: 12vw;
+
+    }
+
+    .questions {
+        gap: 1.3vw;
+    }
+    .content{
+        grid-template-columns: 1fr 1fr;
+    }
+}
